@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Transita+</string>
+    <string name="tex_sistemas_2024">© Tex Sistemas, 2024</string>
+    <string name="content_description_logo">Logo Transita+</string>
+    <string name="content_description_icone_visibilidade">Alternar visibilidade da senha</string>
+    <string name="content_description_capa_ponto_onibus">Imagem de capa do ponto de ônibus</string>
+    <string name="label_email">E-mail</string>
+    <string name="label_senha">Senha</string>
+    <string name="label_button_entrar">Entrar</string>
+    <string name="placeholder_email">Digite seu e-mail</string>
+    <string name="placeholder_senha">Digite sua senha</string>
+    <string name="label_button_acompanhar_veiculo">Acompanhar Veículo</string>
+</resources>
