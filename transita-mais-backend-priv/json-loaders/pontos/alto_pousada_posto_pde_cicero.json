@@ -1,0 +1,28 @@
+{
+  "id": "587d5cb8-7c68-4585-94b6-23a5056195e8",
+  "titulo": "Pousada (Posto Pde Cicero)",
+  "descricao": "Ponto para desembarque com origem da UAST",
+  "informacao": "Ponto apenas para desembarque de passageiros",
+  "endereco": {
+    "rua": "Av. Antônio Romão de Farias",
+    "numero": "6",
+    "bairro": "Borborema",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56906170"
+  },
+  "latitude": -7.981711,
+  "longitude": -38.304783,
+  "horarios": [
+    {
+      "horario": "21:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "22:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    }
+  ],
+  "tipoPonto": "DESEMBARQUE",
+  "tagRota": "ALTO"
+}

@@ -1,0 +1,136 @@
+{
+  "id": "89aac4aa-98f4-4c8e-b653-807f3e9412bd",
+  "titulo": "DJAFarma",
+  "descricao": "Ponto localizado em frente a farmácia DJAFarma.",
+  "informacao": "Parada sem cobertura e sem bancos.",
+  "endereco": {
+    "rua": "Av. Afonso Magalhães",
+    "numero": "1158",
+    "bairro": "São Cristovao",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56903620"
+  },
+  "latitude": -7.983404,
+  "longitude": -38.289824,
+  "horarios": [
+    {
+      "horario": "07:00:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "07:40:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "09:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "10:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "11:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "12:45:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "13:40:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "15:25:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "16:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "17:25:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "17:30:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:05:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:30:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "19:30:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "07:20:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "12:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "13:20:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "17:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "17:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "18:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "18:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "18:20:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "19:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "20:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:50:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "22:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    }
+  ],
+  "tipoPonto": "AMBOS",
+  "tagRota": "CONCEICAO"
+}

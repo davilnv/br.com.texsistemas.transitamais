@@ -1,0 +1,23 @@
+{
+  "id": "0e2ca021-19b6-4e7b-8a8e-7295cb9f1ec9",
+  "titulo": "Posto Bom Jesus",
+  "descricao": "Posto de Combustíveis Bom Jesus",
+  "informacao": "Ponto em frente ao Posto de Combustíveis Bom Jesus",
+  "endereco": {
+    "rua": "R. Cap. Arlindo Rocha",
+    "numero": "735",
+    "bairro": "Alto Bom Jesus",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56906260"
+  },
+  "latitude": -7.9858551,
+  "longitude": -38.3119623,
+  "horarios": [
+    {
+      "horario": "00:00:00",
+      "tipoPonto": "AMBOS"
+    }
+  ],
+  "tipoPonto": "AMBOS"
+}

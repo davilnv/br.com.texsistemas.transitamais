@@ -1,0 +1,84 @@
+{
+  "id": "f986bab8-76bd-46b7-85fe-d4045547181e",
+  "titulo": "Academia da Cidade - Início",
+  "descricao": "Localizado no bairro IPSEP, a parada encontra-se no ínicio da praça Academia da Cidade.",
+  "informacao": "Local aberto, sem cobertura.",
+  "endereco": {
+    "rua": "R. Manoel Pereira Lins",
+    "numero": "1460",
+    "bairro": "IPSEP",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56903340"
+  },
+  "latitude": -7.9897015,
+  "longitude": -38.2872828,
+  "horarios": [
+    {
+      "horario": "07:00:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "07:40:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "09:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "10:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "11:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "12:45:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "13:40:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "15:25:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "16:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "17:25:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:05:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:30:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "19:30:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "17:30:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:00:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:40:00",
+      "tipoPonto": "EMBARQUE"
+    }
+  ],
+  "tipoPonto": "EMBARQUE",
+  "tagRota": "IPSEP"
+}

@@ -1,0 +1,50 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: ponto-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/transitamais
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        default_schema: ponto
+        format_sql: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    schemas: ponto
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/transitamais
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+# Propriedades da aplicação
+ponto:
+  imagens:
+    pasta: /opt/transitamais/ponto-onibus/
+    endpoint-publico: /api/v1/pontos/public/
+    extensao: .png
+    tipos-permitidos:
+      - image/png
+      - image/jpeg
+      - image/jpg
+  solicitacao:
+    pasta-aprovada: /opt/transitamais/solicitacao/aprovada/
+    pasta-pendente: /opt/transitamais/solicitacao/pendente/
+    pasta-rejeitada: /opt/transitamais/solicitacao/rejeitada/

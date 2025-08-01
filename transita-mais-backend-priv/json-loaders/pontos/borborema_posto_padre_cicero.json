@@ -1,0 +1,60 @@
+{
+  "id": "1049b8b0-483b-45d3-9aa8-82cbdba46204",
+  "titulo": "Posto Padre Cícero",
+  "descricao": "Posto de Gasolina Padre Cícero",
+  "informacao": "Ponto próximo ao Posto Padre Cícero",
+  "endereco": {
+    "rua": "Av. Vicente Inácio de Oliveira",
+    "numero": "1641",
+    "bairro": "Bom Jesus",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56906000"
+  },
+  "latitude": -7.9815418,
+  "longitude": -38.3052663,
+  "horarios": [
+    {
+      "horario": "07:20:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "09:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "10:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "11:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "12:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "13:20:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+  
+    {
+      "horario": "15:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+     {
+      "horario": "16:30:00",
+       "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "17:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "17:50:00",
+      "tipoPonto": "DESEMBARQUE"
+    }
+  ],
+  "tipoPonto": "DESEMBARQUE"
+}

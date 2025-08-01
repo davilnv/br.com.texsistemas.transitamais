@@ -1,0 +1,23 @@
+{
+  "id": "b5e23d30-e337-4b97-9678-0f1b39da61e9",
+  "titulo": "Academia Arte Marcial",
+  "descricao": "Academia Arte Marcial.",
+  "informacao": "Sem mais informações disponíveis.",
+  "endereco": {
+    "rua": "Av. Manoel Alves de Carvalho Barros",
+    "numero": "1180",
+    "bairro": "IPSEP",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56912100"
+  },
+  "latitude": -7.9864026,
+  "longitude": -38.2891069,
+  "horarios": [
+    {
+      "horario": "00:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    }
+  ],
+  "tipoPonto": "DESEMBARQUE"
+}

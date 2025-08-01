@@ -1,0 +1,23 @@
+{
+  "id": "80de53da-84ce-48d3-a274-aa730d6008ea",
+  "titulo": "Pizzaria (Mercadinho de Zito)",
+  "descricao": "Pizzaria (Mercadinho de Zito)",
+  "informacao": "Sem mais informações disponíveis.",
+  "endereco": {
+    "rua": "Av. Afonso Magalhães",
+    "numero": "1197",
+    "bairro": "São Cristovao",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56903040"
+  },
+  "latitude": -7.982951,
+  "longitude": -38.289893,
+  "horarios": [
+    {
+      "horario": "00:00:00",
+      "tipoPonto": "AMBOS"
+    }
+  ],
+    "tipoPonto": "AMBOS"
+}

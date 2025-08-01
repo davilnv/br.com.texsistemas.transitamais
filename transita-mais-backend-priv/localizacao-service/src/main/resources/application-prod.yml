@@ -1,0 +1,31 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: localizacao-service
+  datasource:
+    url: jdbc:postgresql://db:5432/transitamais
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        default_schema: localizacao
+        format_sql: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    schemas: localizacao
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://keycloak:8080/realms/transitamais
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka/

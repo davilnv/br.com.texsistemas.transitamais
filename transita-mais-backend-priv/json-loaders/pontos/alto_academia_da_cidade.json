@@ -1,0 +1,87 @@
+{
+  "id": "ab4a27ee-4239-4de4-8887-f8a0ac82fe80",
+  "titulo": "Academia da Cidade",
+  "descricao": "Academia das Cidades Bom Jesus",
+  "informacao": "Ponto na praça, árvores e locais para sentar",
+  "endereco": {
+    "rua": "R. Cap. Arlíndo Rocha",
+    "numero": "S/N",
+    "bairro": "Alto Bom Jesus",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56906260"
+  },
+  "latitude": -7.9870813,
+  "longitude": -38.3128251,
+  "horarios": [
+    {
+      "horario": "07:20:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "09:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "10:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "11:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "12:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "13:20:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "15:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "16:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "17:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "17:50:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "18:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "19:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "20:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:50:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "22:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    }
+  ],
+    "tipoPonto": "AMBOS"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "330100fb-2822-477d-b360-8f4a3d8261b4",
+  "titulo": "Malhada",
+  "descricao": "Ponto para desembarque com origem da UAST",
+  "informacao": "Ponto apenas para desembarque de passageiros",
+  "endereco": {
+    "rua": "R. Cap. Arlíndo Rocha",
+    "numero": "654",
+    "bairro": "Alto Bom Jesus",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56906290"
+  },
+  "latitude": 7.985684,
+  "longitude": -38.312614,
+  "horarios": [
+    {
+      "horario": "21:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "22:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    }
+  ],
+  "tipoPonto": "DESEMBARQUE"
+}

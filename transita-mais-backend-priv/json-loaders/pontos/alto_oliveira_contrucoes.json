@@ -1,0 +1,59 @@
+{
+  "id": "c916adb5-fd3c-4672-89b6-8fd2309e2737",
+  "titulo": "Oliveira Construções",
+  "descricao": "Ponto para desembarque com origem da UAST",
+  "informacao": "Ponto apenas para desembarque de passageiros",
+  "endereco": {
+    "rua": "Av. Antônio Romão de Farias",
+    "numero": "470",
+    "bairro": "Alto Bom Jesus",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56906170"
+  },
+  "latitude": -7.9846176,
+  "longitude": -38.3068531,
+  "horarios": [
+    {
+      "horario": "07:20:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "09:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "10:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "11:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "12:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "13:20:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "15:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "16:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "17:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "17:50:00",
+      "tipoPonto": "DESEMBARQUE"
+    }
+  ],
+  "tipoPonto": "DESEMBARQUE"
+}

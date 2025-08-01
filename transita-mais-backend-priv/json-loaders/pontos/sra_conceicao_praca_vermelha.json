@@ -1,0 +1,71 @@
+{
+  "id": "f614aea7-94c2-478b-bc76-950e7aaa8aea",
+  "titulo": "Praça Vermelha",
+  "descricao": "Ponto para desembarque com origem da UAST",
+  "informacao": "Ponto apenas para desembarque de passageiros",
+  "endereco": {
+    "rua": "Av. Afonso Magalhães",
+    "numero": "850",
+    "bairro": "São Cristovao",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56903040"
+  },
+  "latitude": -7.9891704,
+  "longitude": -38.2917187,
+  "horarios": [
+    {
+      "horario": "07:20:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "12:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "13:20:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "17:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "18:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "18:20:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "19:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "20:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:50:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "22:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    }
+  ],
+  "tipoPonto": "DESEMBARQUE"
+}

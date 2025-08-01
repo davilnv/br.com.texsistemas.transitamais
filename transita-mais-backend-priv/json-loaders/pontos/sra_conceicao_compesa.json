@@ -1,0 +1,28 @@
+{
+  "id": "404db456-a407-4fbb-a595-bff26bd6b150",
+  "titulo": "Compesa",
+  "descricao": "Ponto próximo em frente a compesa",
+  "informacao": "Parada sem cobertura apenas para desembarque",
+  "endereco": {
+    "rua": "Av. Afonso Magalhães",
+    "numero": "466",
+    "bairro": "São Cristovao",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56903380"
+  },
+  "latitude": -7.989235,
+  "longitude": -38.291445,
+  "horarios": [
+    {
+      "horario": "17:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "18:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    }
+  ],
+  "tipoPonto": "DESEMBARQUE",
+  "tagRota": "COMPESA"
+}

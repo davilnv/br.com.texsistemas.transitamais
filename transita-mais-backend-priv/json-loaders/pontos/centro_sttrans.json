@@ -1,0 +1,23 @@
+{
+  "id": "e3e0a1de-2913-439b-8c78-17fb3b21195b",
+  "titulo": "STTRANS",
+  "descricao": "STTRANS",
+  "informacao": "Ponto próximo ao STTRANS",
+  "endereco": {
+    "rua": "Av. Afonso Magalhães",
+    "numero": "169",
+    "bairro": "São Cristovao",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56903040"
+  },
+  "latitude": -7.9953395,
+  "longitude": -38.2935731,
+  "horarios": [
+    {
+      "horario": "00:00:00",
+      "tipoPonto": "AMBOS"
+    }
+  ],
+    "tipoPonto": "AMBOS"
+}

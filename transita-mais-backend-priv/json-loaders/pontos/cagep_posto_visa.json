@@ -1,0 +1,59 @@
+{
+  "id": "072f57a4-41eb-425d-a823-fae4a6f434bc",
+  "titulo": "Posto Visa",
+  "descricao": "Ponto para desembarque com origem da UAST",
+  "informacao": "Ponto apenas para desembarque de passageiros",
+  "endereco": {
+    "rua": "Av. João Gomes de Lucena",
+    "numero": "2679",
+    "bairro": "Cagep",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56900000"
+  },
+  "latitude": -7.9818187,
+  "longitude": -38.2941955,
+  "horarios": [
+    {
+      "horario": "17:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "18:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "18:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "18:20:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "19:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "20:30",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:30",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:40",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:50",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "22:10",
+      "tipoPonto": "DESEMBARQUE"
+    }
+  ],
+  "tipoPonto": "DESEMBARQUE"
+}

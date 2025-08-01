@@ -1,0 +1,107 @@
+{
+  "id": "11af06e3-4da7-42b9-a248-4a47b8196980",
+  "titulo": "FAFOPST",
+  "descricao": "Ponto localizado na Av. Afonso Magalhães, próximo à FAFOPST/Colégio De Aplicação ",
+  "informacao": "Parada com bancos e árvores.",
+  "endereco": {
+    "rua": "Av. Afonso Magalhães",
+    "numero": "1562",
+    "bairro": "São Cristovao",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56912380"
+  },
+  "latitude": -7.990318,
+  "longitude": -38.292217,
+  "horarios": [
+    {
+      "horario": "07:00:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "07:40:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "09:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "10:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "11:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "12:45:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "13:40:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "15:25:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "16:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "17:25:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "17:30:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:05:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:30:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "19:30:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "07:20:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "18:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "19:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "20:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:50:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "22:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    }
+  ],
+  "tipoPonto": "AMBOS"
+}

@@ -1,0 +1,42 @@
+server:
+  port: 8181
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: avaliacao-service
+          uri: lb://AVALIACAO-SERVICE
+          predicates:
+            - Path=/api/v1/avaliacao/ponto-onibus/**
+            - Path=/api/v1/avaliacao/veiculos/**
+        - id: localizacao-service
+          uri: lb://LOCALIZACAO-SERVICE
+          predicates:
+            - Path=/api/v1/historico-localizacao-veiculo/**
+        - id: ponto-service
+          uri: lb://PONTO-SERVICE
+          predicates:
+            - Path=/api/v1/pontos/**
+        - id: usuario-service
+          uri: lb://USUARIO-SERVICE
+          predicates:
+            - Path=/api/v1/usuarios/**
+        - id: veiculo-service
+          uri: lb://VEICULO-SERVICE
+          predicates:
+            - Path=/api/v1/veiculos/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka/
+
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud.netflix.zuul: DEBUG
+    org.springframework.web: DEBUG
+    com.netflix.zuul: DEBUG

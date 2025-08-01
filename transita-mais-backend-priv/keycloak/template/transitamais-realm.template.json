@@ -1,0 +1,101 @@
+{
+  "realm": "transitamais",
+  "enabled": true,
+  "roles": {
+    "realm": [
+      {
+        "name": "ADMIN",
+        "description": "Permissão de Admin para o realm",
+        "composite": true,
+        "composites": {
+          "client": {
+            "realm-management": [
+              "realm-admin"
+            ]
+          }
+        }
+      },
+      {
+        "name": "USER",
+        "description": "Permissão de User para o realm"
+      }
+    ],
+    "client": {
+      "usuario-service": [
+        {
+          "name": "service-admin",
+          "description": "Permissão de Admin para o usuario-service"
+        }
+      ]
+    }
+  },
+  "clients": [
+    {
+      "clientId": "usuario-service",
+      "secret": "${KEYCLOAK_CLIENT_SECRET}",
+      "rootUrl": "${ROOT_URL}",
+      "enabled": true,
+      "publicClient": false,
+      "directAccessGrantsEnabled": true,
+      "standardFlowEnabled": true,
+      "serviceAccountsEnabled": true,
+      "authorizationServicesEnabled": true,
+      "fullScopeAllowed": true,
+      "protocol": "openid-connect",
+      "protocolMappers": [
+        {
+          "name": "audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "consentRequired": false,
+          "config": {
+            "included.client.audience": "usuario-service",
+            "id.token.claim": "true",
+            "access.token.claim": "true"
+          }
+        },
+        {
+          "name": "realm roles",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-realm-role-mapper",
+          "consentRequired": false,
+          "config": {
+            "claim.name": "roles",
+            "jsonType.label": "String",
+            "user.attribute": "roles",
+            "id.token.claim": "true",
+            "access.token.claim": "true"
+          }
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "service-account-usuario-service",
+      "enabled": true,
+      "serviceAccountClientId": "usuario-service",
+      "realmRoles": [
+        "ADMIN",
+        "default-roles-transitamais"
+      ]
+    },
+    {
+      "username": "user1",
+      "enabled": true,
+      "email": "user1@example.com",
+      "firstName": "User",
+      "lastName": "One",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "user1password",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "USER"
+      ]
+    }
+  ]
+}

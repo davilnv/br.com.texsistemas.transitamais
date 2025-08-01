@@ -1,0 +1,71 @@
+{
+  "id": "b3bc4140-c5f4-4a6f-a03b-2274a365420e",
+  "titulo": "Alto da Boa Vista",
+  "descricao": "Localizado no Alto da Boa Vista, Serra Talhada",
+  "informacao": "Ponto em local aberto",
+  "endereco": {
+    "rua": "R. do Sertão",
+    "numero": "S/N",
+    "bairro": "Alto Bom Jesus",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56906090"
+  },
+  "latitude": -7.9831678,
+  "longitude": -38.3104834,
+  "horarios": [
+    {
+      "horario": "07:00:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "07:40:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "09:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "10:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "11:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "12:45:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "13:40:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "15:25:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "16:55:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "17:25:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:05:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:30:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "19:30:00",
+      "tipoPonto": "EMBARQUE"
+    }
+  ],
+  "tipoPonto": "EMBARQUE"
+}

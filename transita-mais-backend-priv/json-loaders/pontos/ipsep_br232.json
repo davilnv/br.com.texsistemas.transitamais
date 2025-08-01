@@ -1,0 +1,40 @@
+{
+  "id": "f407b9a8-3b45-4756-8702-31c41f49301a",
+  "titulo": "BR-232",
+  "descricao": "Localizado em frente a STOP CAR, a parada encontra-se na BR-232, próximo ao bairro COHAB.",
+  "informacao": "Local aberto, sem cobertura.",
+  "endereco": {
+    "rua": "Av. João Gomes de Lucena",
+    "numero": "3711",
+    "bairro": "COHAB",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56909000"
+  },
+  "latitude": -7.982807,
+  "longitude": -38.283407,
+  "horarios": [
+    {
+      "horario": "07:00:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "12:45:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "13:40:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:00:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:40:00",
+      "tipoPonto": "EMBARQUE"
+    }
+  ],
+  "tipoPonto": "EMBARQUE",
+  "tagRota": "IPSEP"
+}

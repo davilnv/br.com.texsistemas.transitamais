@@ -1,0 +1,23 @@
+{
+  "id": "a427691f-29fb-42fd-b31e-2fc353a4dac9",
+  "titulo": "Algaroba",
+  "descricao": "Algaroba",
+  "informacao": "Sem mais informações disponíveis.",
+  "endereco": {
+    "rua": "R. Lindinalva Nunes de Souza",
+    "numero": "18",
+    "bairro": "São Cristovao",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56903100"
+  },
+  "latitude": -7.982951,
+  "longitude": -38.289893,
+  "horarios": [
+    {
+      "horario": "00:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    }
+  ],
+  "tipoPonto": "DESEMBARQUE"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "046f76b3-52f0-448f-9116-3ea2ad1530b3",
+  "titulo": "Antiga Cobal",
+  "descricao": "Em frente ao Antigo Supermecado Cobal",
+  "informacao": "Ponto próximo a antiga Cobal, localizado  em frente a Minas Gold Pão",
+  "endereco": {
+    "rua": "Av. João Kehrle",
+    "numero": "S/n",
+    "bairro": "Várzea",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56912060"
+  },
+  "latitude": -7.9869031,
+  "longitude": -38.2844728,
+  "horarios": [
+    {
+      "horario": "07:00:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "12:45:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "13:40:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:00:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:40:00",
+      "tipoPonto": "EMBARQUE"
+    }
+  ],
+    "tipoPonto": "EMBARQUE"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "641273ec-08d2-4682-bc54-4e1af2d58ac5",
+  "titulo": "Oficina São José",
+  "descricao": "Próximo a Oficina São José",
+  "informacao": "Localizado em frente  à Oficina São José.",
+  "endereco": {
+    "rua": "Av. João Gomes de Lucena",
+    "numero": "4140",
+    "bairro": "São Cristóvão",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56912060"
+  },
+  "latitude": -7.9835534,
+  "longitude": -38.2834102,
+  "horarios": [
+    {
+      "horario": "07:00:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "12:45:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "13:40:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:00:00",
+      "tipoPonto": "EMBARQUE"
+    },
+    {
+      "horario": "18:40:00",
+      "tipoPonto": "EMBARQUE"
+    }
+  ],
+  "tipoPonto": "EMBARQUE"
+}

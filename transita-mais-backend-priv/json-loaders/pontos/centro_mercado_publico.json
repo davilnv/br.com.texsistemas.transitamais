@@ -1,0 +1,47 @@
+{
+  "id": "469e7d4b-8f06-4158-8161-4da178fa8ad5",
+  "titulo": "Mercado Público",
+  "descricao": "Ponto para desembarque com origem da UAST",
+  "informacao": "Ponto apenas para desembarque de passageiros",
+  "endereco": {
+    "rua": "Rua Deputado Afrânio Ribeiro de Godoy",
+    "numero": "538",
+    "bairro": "Nossa Sra. da Penha",
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "cep": "56903390"
+  },
+  "latitude": -7.9901885,
+  "longitude": -38.3021214,
+  "horarios": [
+    {
+      "horario": "18:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "19:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "20:30:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:00:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:40:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "21:50:00",
+      "tipoPonto": "DESEMBARQUE"
+    },
+    {
+      "horario": "22:10:00",
+      "tipoPonto": "DESEMBARQUE"
+    }
+  ],
+  "tipoPonto": "DESEMBARQUE"
+}

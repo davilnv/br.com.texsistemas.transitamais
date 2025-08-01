@@ -1,0 +1,22 @@
+# IDEs
+.idea/
+.vscode/
+
+# Serviços Targets
+avaliacao-service/target/
+eureka-server/target/
+localizacao-service/target/
+ponto-service/target/
+transita-commons/target/
+usuario-service/target/
+veiculo-service/target/
+api-gateway/target
+
+# Arquivos do macos
+.DS_Store
+
+# JSON de config realm do keycloak - Manter apenas o template
+keycloak/realms/transitamais-realm.json
+
+# Variáveis de ambiente
+.env

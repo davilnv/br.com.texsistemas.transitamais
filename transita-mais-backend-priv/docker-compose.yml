@@ -1,0 +1,141 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_transitamais
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres > /dev/null"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: transitamais
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  keycloak_db:
+    image: postgres:15
+    container_name: keycloak_db
+    restart: always
+    environment:
+      POSTGRES_DB: keycloak
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: keycloak
+    volumes:
+      - keycloak_data:/var/lib/postgresql/data
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:24.0.3
+    container_name: keycloak
+    command: start-dev --import-realm
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://keycloak_db:5432/keycloak
+      KC_DB_USERNAME: keycloak
+      KC_DB_PASSWORD: keycloak
+      KC_HTTP_PORT: 8080
+      KC_HOSTNAME_STRICT: "false"
+      KC_HOSTNAME_STRICT_HTTPS: "false"
+      KEYCLOAK_HTTP_ENABLED: "true"
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+      #KC_LOG_LEVEL: DEBUG # Ativa o nível de log DEBUG/z
+    volumes:
+      - ./keycloak/realms:/opt/keycloak/data/import
+      - ./keycloak/scripts:/opt/keycloak/data/scripts
+    depends_on:
+      - keycloak_db
+    #entrypoint: ["/opt/keycloak/data/scripts/import-realm.sh"]
+
+  eureka:
+    build: ./eureka-server
+    container_name: eureka
+    ports:
+      - "8761:8761"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      - db
+
+  gateway:
+    build: ./api-gateway
+    container_name: gateway
+    ports:
+      - "8181:8181"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      - eureka
+      - keycloak
+
+  avaliacao-service:
+    build: ./avaliacao-service
+    container_name: avaliacao-service
+    ports:
+      - "8083:8083"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      - db
+      - eureka
+
+  localizacao-service:
+    build: ./localizacao-service
+    container_name: localizacao-service
+    ports:
+      - "8085:8085"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      - db
+      - eureka
+
+  ponto-service:
+    build: ./ponto-service
+    container_name: ponto-service
+    volumes:
+      - /opt/transitamais:/opt/transitamais
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      - db
+      - eureka
+
+  usuario-service:
+    build: ./usuario-service
+    container_name: usuario-service
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - KEYCLOAK_CLIENT_SECRET=${KEYCLOAK_CLIENT_SECRET}
+    depends_on:
+      - db
+      - eureka
+      - keycloak
+
+  veiculo-service:
+    build: ./veiculo-service
+    container_name: veiculo-service
+    ports:
+      - "8084:8084"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      - db
+      - eureka
+
+volumes:
+  db_data:
+  keycloak_data:

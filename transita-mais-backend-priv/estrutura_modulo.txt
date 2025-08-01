@@ -1,0 +1,97 @@
+├── usuario-service
+│   ├── .mvn
+│   │   ├── wrapper
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   ├── br
+│   │   │   │   │   ├── com
+│   │   │   │   │   │   ├── texsistemas
+│   │   │   │   │   │   │   ├── transitamais
+│   │   │   │   │   │   │   │   ├── usuarioservice
+│   │   │   │   │   │   │   │   │   └── UsuarioServiceApplication.java
+│   │   │   │   │   │   │   │   │   ├── application
+│   │   │   │   │   │   │   │   │   │   ├── port
+│   │   │   │   │   │   │   │   │   │   │   ├── input
+│   │   │   │   │   │   │   │   │   │   │   │   └── UsuarioAdminUseCase.java
+│   │   │   │   │   │   │   │   │   │   │   │   └── UsuarioPublicUseCase.java
+│   │   │   │   │   │   │   │   │   │   │   ├── output
+│   │   │   │   │   │   │   │   │   │   │   │   └── AutenticacaoOutputPort.java
+│   │   │   │   │   │   │   │   │   │   │   │   └── ProvedorAutenticacaoPort.java
+│   │   │   │   │   │   │   │   │   │   │   │   └── UsuarioOutputPort.java
+│   │   │   │   │   │   │   │   │   ├── domain
+│   │   │   │   │   │   │   │   │   │   ├── model
+│   │   │   │   │   │   │   │   │   │   │   └── Usuario.java
+│   │   │   │   │   │   │   │   │   │   ├── service
+│   │   │   │   │   │   │   │   │   │   │   └── UsuarioService.java
+│   │   │   │   │   │   │   │   │   ├── infrastructure
+│   │   │   │   │   │   │   │   │   │   ├── adapter
+│   │   │   │   │   │   │   │   │   │   │   ├── input
+│   │   │   │   │   │   │   │   │   │   │   │   ├── event
+│   │   │   │   │   │   │   │   │   │   │   │   ├── rest
+│   │   │   │   │   │   │   │   │   │   │   │   │   ├── v1
+│   │   │   │   │   │   │   │   │   │   │   │   │   │   ├── controller
+│   │   │   │   │   │   │   │   │   │   │   │   │   │   │   └── UsuarioController.java
+│   │   │   │   │   │   │   │   │   │   │   │   │   │   ├── mapper
+│   │   │   │   │   │   │   │   │   │   │   │   │   │   │   └── UsuarioDtoMapper.java
+│   │   │   │   │   │   │   │   │   │   │   ├── output
+│   │   │   │   │   │   │   │   │   │   │   │   ├── keycloak
+│   │   │   │   │   │   │   │   │   │   │   │   │   └── KeycloakClientAdapter.java
+│   │   │   │   │   │   │   │   │   │   │   │   ├── persistence
+│   │   │   │   │   │   │   │   │   │   │   │   │   └── UsuarioPersistenceAdapter.java
+│   │   │   │   │   │   │   │   │   │   │   │   │   ├── entity
+│   │   │   │   │   │   │   │   │   │   │   │   │   │   └── UsuarioEntity.java
+│   │   │   │   │   │   │   │   │   │   │   │   │   ├── mapper
+│   │   │   │   │   │   │   │   │   │   │   │   │   │   └── UsuarioEntityMapper.java
+│   │   │   │   │   │   │   │   │   │   │   │   │   ├── repository
+│   │   │   │   │   │   │   │   │   │   │   │   │   │   └── UsuarioRepository.java
+│   │   │   │   │   │   │   │   │   │   ├── config
+│   │   │   │   │   │   │   │   │   │   │   └── RestTemplateConfig.java
+│   │   │   │   │   │   │   │   │   │   │   └── SecurityConfig.java
+│   │   │   ├── resources
+│   │   │   │   ├── db
+│   │   │   │   │   ├── migration
+│   │   ├── test
+│   │   │   ├── java
+│   │   │   │   ├── br
+│   │   │   │   │   ├── com
+│   │   │   │   │   │   ├── texsistemas
+│   │   │   │   │   │   │   ├── transitamais
+│   │   │   │   │   │   │   │   ├── usuarioservice
+│   │   │   │   │   │   │   │   │   └── UsuarioServiceApplicationTests.java
+│   ├── target
+│   │   ├── classes
+│   │   │   ├── br
+│   │   │   │   ├── com
+│   │   │   │   │   ├── texsistemas
+│   │   │   │   │   │   ├── transitamais
+│   │   │   │   │   │   │   ├── usuarioservice
+│   │   │   │   │   │   │   │   ├── application
+│   │   │   │   │   │   │   │   │   ├── port
+│   │   │   │   │   │   │   │   │   │   ├── input
+│   │   │   │   │   │   │   │   │   │   ├── output
+│   │   │   │   │   │   │   │   ├── domain
+│   │   │   │   │   │   │   │   │   ├── model
+│   │   │   │   │   │   │   │   │   ├── service
+│   │   │   │   │   │   │   │   ├── infrastructure
+│   │   │   │   │   │   │   │   │   ├── adapter
+│   │   │   │   │   │   │   │   │   │   ├── input
+│   │   │   │   │   │   │   │   │   │   │   ├── rest
+│   │   │   │   │   │   │   │   │   │   │   │   ├── v1
+│   │   │   │   │   │   │   │   │   │   │   │   │   ├── controller
+│   │   │   │   │   │   │   │   │   │   │   │   │   ├── mapper
+│   │   │   │   │   │   │   │   │   │   ├── output
+│   │   │   │   │   │   │   │   │   │   │   ├── keycloak
+│   │   │   │   │   │   │   │   │   │   │   ├── persistence
+│   │   │   │   │   │   │   │   │   │   │   │   ├── entity
+│   │   │   │   │   │   │   │   │   │   │   │   ├── mapper
+│   │   │   │   │   │   │   │   │   │   │   │   ├── repository
+│   │   │   │   │   │   │   │   │   ├── config
+│   │   │   ├── db
+│   │   │   │   ├── migration
+│   │   ├── generated-sources
+│   │   │   ├── annotations
+│   │   ├── maven-status
+│   │   │   ├── maven-compiler-plugin
+│   │   │   │   ├── compile
+│   │   │   │   │   ├── default-compile

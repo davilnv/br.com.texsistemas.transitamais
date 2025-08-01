@@ -1,0 +1,205 @@
+Table usuarios {
+  id UUID [pk]
+  nome VARCHAR(100)
+  sobrenome VARCHAR(100)
+  email VARCHAR(100) [not null, unique]
+  senha VARCHAR(255) [not null]
+  ativo BOOLEAN [default: true]
+  data_criacao TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+}
+
+Table usuario_roles {
+  usuario_id UUID [not null]
+  role VARCHAR(50) [not null]
+
+  Note: "Ligação de usuários com suas roles (permissões)."
+}
+
+Table enderecos {
+  id UUID [pk]
+  rua VARCHAR(100) [not null]
+  numero VARCHAR(10) [not null]
+  bairro VARCHAR(100) [not null]
+  cidade VARCHAR(100) [not null]
+  uf VARCHAR(2) [not null]
+  cep VARCHAR(10) [not null]
+}
+
+Table horarios {
+  id UUID [pk]
+  horario TIME [not null]
+}
+
+Table ponto_onibus {
+  id UUID [pk]
+  titulo VARCHAR(100) [not null]
+  descricao VARCHAR(100) [not null]
+  avaliacao FLOAT [not null]
+  informacao VARCHAR(100) [not null]
+  endereco_id UUID [not null]
+  latitude DECIMAL(9,6) [not null]
+  longitude DECIMAL(9,6) [not null]
+
+  Note: "Tabela de pontos de ônibus, com geolocalização."
+}
+
+Table ponto_onibus_horarios {
+  ponto_onibus_id UUID [not null]
+  horario_id UUID [not null]
+
+  Note: "Tabela de associação entre pontos de ônibus e horários."
+}
+
+Table solicitacoes {
+  id UUID [pk]
+  ponto_onibus_id UUID [not null]
+  tipo_solicitacao VARCHAR(15) [not null] // Inclusão, Alteração ou Imagem
+  nome_arquivo_corpo VARCHAR(255)
+  nome_imagem VARCHAR(255)
+  status_solicitacao VARCHAR(15) [not null] // Pendente, Aprovada ou Rejeitada
+
+  Note: "Solicitações relacionadas aos pontos de ônibus, como cadastro ou alteração."
+}
+
+Table veiculos {
+  id UUID [pk]
+  placa VARCHAR(10) [not null, unique]
+  tipo_transporte VARCHAR(50) [not null] // ônibus, van, carona, outros
+  capacidade INTEGER
+  ativo BOOLEAN [default: true]
+  data_criacao TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+
+  Note: "Veículos disponíveis para acompanhamento."
+}
+
+Table informacoes_veiculos {
+  veiculo_id UUID [not null]
+  latitude DECIMAL(9,6) [not null]
+  longitude DECIMAL(9,6) [not null]
+  data_registro TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+  data_registro_prox_ponto TIMESTAMP
+  quantidade_passageiros INTEGER
+  horario_atual_id UUID [not null]
+
+  Note: "Registro de posições dos veículos em tempo real."
+}
+
+Table horario_veiculo {
+  id UUID [pk]
+  veiculo_id UUID [not null]
+  horario_id UUID [not null]
+
+  Note: "Associação entre veículos e seus horários de rota."
+}
+
+Table rota_veiculo_ponto {
+  veiculo_id UUID [not null]
+  horario_id UUID [not null]
+  ponto_onibus_id UUID [not null]
+  ordem INTEGER [not null]
+
+  Note: "Define a sequência de pontos para cada veículo/horário."
+}
+
+Table avaliacoes_veiculos {
+  id UUID [pk]
+  usuario_id UUID [not null]
+  veiculo_id UUID [not null]
+  horario_id UUID // opcional: em qual horário ocorreu a avaliação
+  conforto INTEGER [not null] // escala de 1 a 5
+  tempo_viagem INTEGER // minutos estimados (expectativa vs realidade)
+  superlotacao BOOLEAN // se estava muito cheio
+  limpeza INTEGER // escala de 1 a 5
+  comentarios TEXT // texto livre para observações
+  data_avaliacao TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+
+  Note: "Avaliação de serviço prestado pelos veículos."
+}
+
+Table avaliacoes_ponto_onibus {
+  id UUID [pk]
+  usuario_id UUID [not null]
+  ponto_onibus_id UUID [not null]
+  cobertura BOOLEAN // tem cobertura contra chuva?
+  iluminacao BOOLEAN // é bem iluminado?
+  seguranca INTEGER // escala de 1 a 5
+  superlotacao BOOLEAN // muita gente esperando?
+  conforto_ambiente INTEGER // bancos, estrutura, etc. (1 a 5)
+  comentarios VARCHAR
+  data_avaliacao TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+
+  Note: "Avaliação de conforto e segurança dos pontos de ônibus."
+}
+
+Table localizacoes_usuarios {
+  id UUID [pk]
+  usuario_id UUID [not null]
+  latitude DECIMAL(9,6) [not null]
+  longitude DECIMAL(9,6) [not null]
+  velocidade DECIMAL(5,2) // km/h
+  precisao DECIMAL(5,2) // em metros
+  data_hora TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+
+  Note: "Localização periódica dos usuários para detectar presença em ônibus."
+}
+
+Table confirmacoes_ponto {
+  id UUID [pk]
+  usuario_id UUID [not null]
+  ponto_onibus_id UUID [not null]
+  resposta BOOLEAN [not null] // TRUE = chegou, FALSE = não chegou
+  horario_previsto TIME // horário previsto de chegada
+  data_resposta TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+
+  Note: "Confirmações manuais dos usuários sobre chegada do ônibus no ponto."
+}
+
+Table associacoes_usuario_veiculo {
+  id UUID [pk]
+  usuario_id UUID [not null]
+  veiculo_id UUID [not null]
+  horario_id UUID [not null]
+  data_hora_associacao TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+
+  Note: "Associação automática entre usuários e veículos detectados em movimento."
+}
+
+Table historico_localizacao_veiculo {
+  id UUID [pk]
+  veiculo_id UUID [not null]
+  latitude DECIMAL(9,6) [not null]
+  longitude DECIMAL(9,6) [not null]
+  origem_atualizacao VARCHAR(50) // 'usuario_confirmacao', 'usuario_movimento', etc.
+  data_hora_registro TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+
+  Note: "Histórico de atualizações de localização dos veículos baseado em dados dos usuários."
+}
+
+
+Ref: usuario_roles.usuario_id > usuarios.id
+Ref: ponto_onibus.endereco_id > enderecos.id
+Ref: ponto_onibus_horarios.ponto_onibus_id > ponto_onibus.id
+Ref: ponto_onibus_horarios.horario_id > horarios.id
+Ref: ponto_onibus_id > ponto_onibus.id
+Ref: informacoes_veiculos.veiculo_id > veiculos.id
+Ref: informacoes_veiculos.horario_atual_id > horario_veiculo.id
+Ref: horario_veiculo.veiculo_id > veiculos.id
+Ref: horario_veiculo.horario_id > horarios.id
+Ref: rota_veiculo_ponto.veiculo_id > veiculos.id
+Ref: rota_veiculo_ponto.horario_id > horarios.id
+Ref: rota_veiculo_ponto.ponto_onibus_id > ponto_onibus.id
+Ref: avaliacoes_veiculos.usuario_id > usuarios.id
+Ref: avaliacoes_veiculos.veiculo_id > veiculos.id
+Ref: avaliacoes_veiculos.horario_id > horarios.id
+Ref: avaliacoes_ponto_onibus.usuario_id > usuarios.id
+Ref: avaliacoes_ponto_onibus.ponto_onibus_id > ponto_onibus.id
+
+Ref: localizacoes_usuarios.usuario_id > usuarios.id
+Ref: confirmacoes_ponto.usuario_id > usuarios.id
+Ref: confirmacoes_ponto.ponto_onibus_id > ponto_onibus.id
+Ref: associacoes_usuario_veiculo.usuario_id > usuarios.id
+Ref: associacoes_usuario_veiculo.veiculo_id > veiculos.id
+Ref: associacoes_usuario_veiculo.horario_id > horarios.id
+Ref: historico_localizacao_veiculo.veiculo_id > veiculos.id
+
+
